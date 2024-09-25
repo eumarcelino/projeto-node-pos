@@ -1,3 +1,36 @@
 
 9
 	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+H
+lgpd-back/models/User.js,c\d\cd8e42fd48d859a48ac4dc1c29a2a11b5d4aaa0a
+R
+"lgpd-back/routes/UserController.js,8\0\808c33d0b1c45b4d94740401b31521949723b074
+P
+ lgpd-front/src/app/app.module.ts,b\7\b7c117beecf98e5b18860fcebe6239d57b5e33ce
+]
+-lgpd-front/src/app/pages/user/user.service.ts,a\5\a58329c241bcb61da5a5094d9988b82e91411c3a
+p
+@lgpd-front/src/app/pages/user/user-form/user-form.component.html,3\7\379f2084371ddfca89c79939ffc5af4075ecac02
+n
+>lgpd-front/src/app/pages/user/user-form/user-form.component.ts,4\5\45713595e9f45e9fe3b3d91b32518abf679682d0
+U
+%lgpd-back/routes/TeacherController.js,b\5\b573b8a0d8d20661b9c9be1fae9b59aa579493de
+J
+lgpd-back/routes/router.js,4\3\432832bd0a0ce1f94a97c09228365898da092f43
+X
+(lgpd-back/routes/EvaluationController.js,8\3\8369501d13507bcc082cc74768186bf830f0a95e
+T
+$lgpd-back/routes/CourseController.js,d\1\d1340433fdeba5768ecac9e292bfa0413eccdf69
+e
+5lgpd-back/node_modules/sequelize/types/sequelize.d.ts,2\7\27457948cf564e3402fb529238c661c3b06a8faa
+K
+lgpd-back/utils/database.js,6\b\6baacea15a0b687fd382f4a1825436ae2807c4ff
+B
+lgpd-back/index.js,1\2\12835cf3a6a712d655a1acaac6440b047ea79f15
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
+F
+lgpd-back/package.json,c\7\c78b90f34a97c77496b768376652929445150f68
+X
+(lgpd-back/repositories/UserRepository.js,4\5\45ec03000dcaa4206ac8252fd3e10d28f99c8379

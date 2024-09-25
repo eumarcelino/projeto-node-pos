@@ -1,16 +1,20 @@
-import {Sequelize} from "sequelize";
+import { Sequelize } from "sequelize";
 
-const  Sequelize = new Sequelize(
+// Crie a instância do Sequelize com as configurações apropriadas
+const sequelize = new Sequelize(
     "lgpd-database",
-    "postgres",
-    "postgres",
+    "root",
+    "",
     {
         host: "localhost",
-        dialect: "postgres",
-        port: 5432,
+        dialect: "mysql",
+        port: 3306,
         define: {
             timestamps: false
         }
     }
 );
-export default Sequelize;
+
+// Exporte a instância do Sequelize, não a classe Sequelize
+export default sequelize;
+

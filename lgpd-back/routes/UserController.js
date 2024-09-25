@@ -18,16 +18,24 @@ const upload = multer({storage: storage}).single("file");
 
 //salvar usuario
 router.post("/addUser", async function (req, res) {
+
+    upload(req, res, async function (err) {
     const userModel = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
         gender: req.body.gender,
         profile_picture: req.file.path
+
+
     }
 
+    if (err) {
+        return res.end("Error uploading file.");
+    }
     const user = await userService.saveUser(userModel);
     return res.status(200).json(user);
+    });
 });
 
 //buscar todos os usuarios
@@ -50,6 +58,8 @@ router.delete("/deleteUser/:id", async function (req, res) {
 
 //atualizar por id
 router.put("/updateUser/:id", async function (req, res) {
+    upload(req, res, async function (err) {
+
     const userModel = {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
@@ -57,8 +67,18 @@ router.put("/updateUser/:id", async function (req, res) {
         gender: req.body.gender,
         profile_picture: req.file.path
     }
+
+    if (err) {
+        return res.end("Error uploading file.");
+    }
     const user = await userService.updateUserById(req.params.id, userModel);
     return res.status(200).json(user);
+    });
+});
+
+router.get("/userImage/:id", async function (req, res) {
+    const user = await userService.getUserById(req.params.id);
+    res.sendFile(process.cwd() + "\\" + user.profile_picture);
 });
 
 export default router;
